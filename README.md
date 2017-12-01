@@ -23,8 +23,6 @@ while the following pseudocode explains the new algorithm (see the paper for the
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/Algorithm_GAN.png)
 
-The training of this new model converges in few epochs. Using our dataset of 8K training examples, it was required only 100 epochs to reach categorical cross-entropy loss of 0.0318, at the cost of 139 s/epoch running in a GPU GTX980. The performance of this trained model (provided in this repository) seems as convincing as the performance of a vanilla seq2seq model trained on the ~300K training examples of the Cornell Movie Dialogs Corpus, but requires much less computational effort to train.
-
 **To chat with the pre-trained models:**
 
 1. Download the python file "conversation_GAN.py", the vocabulary file "vocabulary_movie", and the net weights "my_model_weights20.h5" (trained by teacher forcing) and "my_model_weights.h5" (trained by the new adversarial method), which can be found here: https://www.dropbox.com/sh/o0rze9dulwmon8b/AAA6g6QoKM8hBEHGst6W4JGDa?dl=0 ;
