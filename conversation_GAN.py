@@ -137,10 +137,8 @@ input_context = Input(shape=(maxlen_input,), dtype='int32', name='the context te
 input_answer = Input(shape=(maxlen_input,), dtype='int32', name='the answer text up to the current token')
 LSTM_encoder = LSTM(sentence_embedding_size, init= 'lecun_uniform', name='Encode context')
 LSTM_decoder = LSTM(sentence_embedding_size, init= 'lecun_uniform', name='Encode answer up to the current token')
-if os.path.isfile(weights_file):
-    Shared_Embedding = Embedding(output_dim=word_embedding_size, input_dim=dictionary_size, input_length=maxlen_input, name='Shared')
-else:
-    Shared_Embedding = Embedding(output_dim=word_embedding_size, input_dim=dictionary_size, weights=[embedding_matrix], input_length=maxlen_input, name='Shared')
+
+Shared_Embedding = Embedding(output_dim=word_embedding_size, input_dim=dictionary_size, input_length=maxlen_input, name='Shared')
 word_embedding_context = Shared_Embedding(input_context)
 context_embedding = LSTM_encoder(word_embedding_context)
 
