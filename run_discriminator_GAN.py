@@ -66,16 +66,6 @@ def print_result(input):
 # Loading our vocabulary:
 vocabulary = cPickle.load(open(vocabulary_file, 'rb'))
 
-# Using the Glove embedding:
-i = 0
-for word in vocabulary:
-    embedding_vector = embeddings_index.get(word[0])
-    
-    if embedding_vector is not None:
-        # words not found in embedding index will be all-zeros.
-        embedding_matrix[i] = embedding_vector
-    i += 1
-
 def init_model(bidirec):
 
     # *******************************************************************
