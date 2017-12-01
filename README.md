@@ -39,7 +39,7 @@ The training of this new model converges in few epochs. Using our dataset of 8K 
 
 1. Download all the files in https://www.dropbox.com/sh/o0rze9dulwmon8b/AAA6g6QoKM8hBEHGst6W4JGDa?dl=0 ;
 2. Download the Glove folder 'glove.6B' and include this folder in the directory of the chatbot (you can find this folder here https://nlp.stanford.edu/projects/glove/). This algorithm applies transfer learning by using a pre-trained word embedding;
-3. Run GAN_train_script.py. This script is self-explained and summarizes the new adversarial training. If you want to train on your own data, include it in the files "context_simple" and "answers_simple" following the same pattern.
+3. Run GAN_train_script.py. This script is self-explained and summarizes the new adversarial training. If you want to train on your own data, include it in the files "context_simple" and "answers_simple" following the same pattern. As can be seen in the script, I am using Theano backend and GPU, a few modifications are required to run it with TensorFlow backend.
 
 If you want to start the adversarial training from the scratch, make the weight file my_model_weights.h5 (pre-trained the new adversarial method) equal to my_model_weights20.h5 (pre-trained by teacher forcing) and run train_script.py.
 
