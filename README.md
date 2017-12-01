@@ -19,7 +19,7 @@ Our new end-to-end adversarial training can be explained by the following Keras 
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/model_GAN.png)
 
-while the following pseudocode explains the new algorithm:
+while the following pseudocode explains the new algorithm (see the paper for the definition of the variables):
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/Algorithm_GAN.png)
 
