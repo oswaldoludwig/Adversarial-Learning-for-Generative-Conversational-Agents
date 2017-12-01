@@ -15,7 +15,7 @@ os.system(file)
 
 for i in range (Epochs):
     
-    print('Generating bot data (epoch #%d)...'%(i + 1))
+    print('Producing machine-generated data (epoch #%d)...'%(i + 1))
     file = 'THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32,exception_verbosity=high python simulate_bot_GAN.py'
     os.system(file)
         
