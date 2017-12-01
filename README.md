@@ -9,7 +9,7 @@ The trained model available here used a dataset collected from dialogues of Engl
 
 Our GCA model can be explained by the following flowchart:
 
-![alt tag](https://github.com/oswaldoludwig/Seq2seq-Chatbot-for-Keras/blob/master/model_graph.png)
+![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/model_graph.png)
 
 while the following pseudocode explains the baseline algorithm (teacher forcing):
 
