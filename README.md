@@ -15,7 +15,7 @@ while the following pseudocode explains the baseline algorithm (teacher forcing)
 
 ![alt tag](https://github.com/oswaldoludwig/Seq2seq-Chatbot-for-Keras/blob/master/Algorithm.png)
 
-Our new end-to-end adversarial training uses the following model composed by the generator and the discriminator. The yellow blocks belong to the GCA (the generator), while the green blocks belong to the discriminator. The white blocks are shared between generator and discriminator:
+Our new end-to-end adversarial training can be explained by the following Keras model, which is composed by the generator and the discriminator. The yellow blocks belong to the GCA (the generator), while the green blocks belong to the discriminator. The white blocks are shared between generator and discriminator:
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/model_GAN.png)
 
