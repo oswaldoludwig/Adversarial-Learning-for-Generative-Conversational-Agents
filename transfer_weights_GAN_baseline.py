@@ -19,7 +19,6 @@ import sys
 import nltk
 import re
 import time
-import consistency_check as cc
 from keras.utils import plot_model
 
 word_embedding_size = 100
