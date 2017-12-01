@@ -44,8 +44,8 @@ learning_rate = 0.000001
 vocabulary_file = 'vocabulary_movie'
 questions_file_gen = 'Padded_context_generated'
 answers_file_gen = 'Padded_answers_generated'
-questions_file_hum = 'Padded_context_simple'
-answers_file_hum = 'Padded_answers_simple'
+questions_file_hum = 'Padded_context'
+answers_file_hum = 'Padded_answers'
 weights_file = 'my_model_weights_discriminator.h5'
 GLOVE_DIR = './glove.6B/'
 
