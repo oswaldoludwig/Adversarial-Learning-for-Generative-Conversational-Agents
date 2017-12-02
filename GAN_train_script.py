@@ -5,7 +5,7 @@ import os
 
 Epochs = 15
 
-print('Transferring the weights from the pre-trained baseline bot to the the GAN model...')
+print('Transferring the weights from the pre-trained baseline bot to the GAN model...')
 file = 'python transfer_weights_baseline_GAN.py'
 os.system(file)
 
