@@ -11,7 +11,7 @@ Our GCA model can be explained by the following flowchart:
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/model_graph.png)
 
-while the following pseudocode explains the baseline algorithm (teacher forcing):
+while the following pseudocode explains our GCA algorithm:
 
 ![alt tag](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents/blob/master/Algorithm.png)
 
